@@ -1,7 +1,7 @@
 # Site
 title:              TsaiTsai
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+bio:                'bb'
+description:        "aa"
 locale:             en_US
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://TsaiTsai2000.github.io" # the base hostname & protocol for your site
@@ -12,14 +12,14 @@ disqus_shortname:   default
 # Social
 analytics-id:       "default"
 twitter:            default
-facebook:           default
-instagram:          default
+facebook:           https://www.facebook.com/wl03078162
+instagram:          https://www.instagram.com/sincih0822/
 github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           Taoyuan, R.O.c.
+phone:              Please contact me by mail.
+email:              wl03078162@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
