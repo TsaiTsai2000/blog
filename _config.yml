@@ -1,7 +1,7 @@
 # Site
 title:              TsaiTsai
-bio:                'bb'
-description:        "aa"
+bio:                '部落客日記'
+description:        "分享生活、旅遊記事，把握現在的日子留做以後懷念。"
 locale:             en_US
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://TsaiTsai2000.github.io" # the base hostname & protocol for your site
@@ -11,8 +11,10 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
+twitter:            default
 facebook:           "https://www.facebook.com/wl03078162"
 instagram:          "https://www.instagram.com/sincih0822/"
+github:             default
 
 # personal
 location:           Taoyuan, R.O.C.
