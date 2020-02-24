@@ -11,13 +11,11 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           https://www.facebook.com/wl03078162
-instagram:          https://www.instagram.com/sincih0822/
-github:             default
+facebook:           "https://www.facebook.com/wl03078162"
+instagram:          "https://www.instagram.com/sincih0822/"
 
 # personal
-location:           Taoyuan, R.O.c.
+location:           Taoyuan, R.O.C.
 phone:              Please contact me by mail.
 email:              wl03078162@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
 
