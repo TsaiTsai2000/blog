@@ -5,6 +5,28 @@ date:   2017-10-31
 excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
 image: "/images/pic02.jpg"
 ---
+<div class="slider_container">
+	<div>
+		<img src="/images/Cebu/27-4.JPG"" alt="pure css3 slider" />
+		<span class="info">Image Description 1</span>
+	</div>
+	<div>
+		<img src="/images/Cebu/27-5.JPG"" alt="pure css3 slider" />
+		<span class="info">Image Description 2</span>
+	</div>
+	<div>
+		<img src="/images/Cebu/27-6.JPG"" alt="pure css3 slider" />
+		<span class="info">Image Description 3</span>
+	</div>
+	<div>
+		<img src="/images/Cebu/27-7.JPG"" alt="pure css3 slider" />
+		<span class="info">Image Description 4</span>
+	</div>
+	<div>
+		<img src="/images/Cebu/27-8.JPG"" alt="pure css3 slider" />
+		<span class="info">Image Description 5</span>
+	</div>
+</div>
 
 ## How to Use This Theme
 Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
