@@ -72,18 +72,6 @@ body {
 }
 </style>
 
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
-
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
-}
 
 <div class="container">
 
