@@ -5,9 +5,6 @@ date:   2017-10-31
 excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
 image: "/images/pic02.jpg"
 ---
-<!DOCTYPE html>
-<html>
- <head>
   <title> 飛天網事--純CSS程式碼實現圖片輪播 </title>
   <meta charset="utf-8" />
   <meta name="description" content="飛天網事，WEB前端開發，純css3程式碼圖片輪播，HTML5+CSS3精彩案例" />
@@ -89,28 +86,25 @@ image: "/images/pic02.jpg"
 		@keyframes ma4 {100%{margin-left:-900px;}	}
 		@keyframes ma5 {100%{margin-left:-1200px;}	}
   </style>
- </head>
- <body>
+
  <div id="frame" >
-		<a id="a1" class="num">1</a>
-		<a id="a2" class="num">2</a>
-		<a id="a3" class="num">3</a>
-		<a id="a4" class="num">4</a>
-		<a id="a5" class="num">5</a>
-		<div id="photos" class="play">
-			  <img src="http://eduppp.cn/images/0/1.jpg" >
-			  <img src="http://eduppp.cn/images/0/3.jpg" >
-			  <img src="http://eduppp.cn/images/0/4.jpg" >
-			  <img src="http://eduppp.cn/images/0/5.jpg" >
-			  <img src="http://eduppp.cn/images/0/2.jpg" >
-			  <ul id="dis">
-				<li>中國標誌性建築：天安門</li>
-				<li>中國標誌性建築：東方明珠</li>
-				<li>中國標誌性建築：布達拉宮</li>
-				<li>中國標誌性建築：長城</li>
-				<li>中國標誌性建築：天壇</li>
-			  </ul>
-		</div>
+	<a id="a1" class="num">1</a>
+	<a id="a2" class="num">2</a>
+	<a id="a3" class="num">3</a>
+	<a id="a4" class="num">4</a>
+	<a id="a5" class="num">5</a>
+	<div id="photos" class="play">
+		<img src="http://eduppp.cn/images/0/1.jpg" >
+		  <img src="http://eduppp.cn/images/0/3.jpg" >
+		<img src="http://eduppp.cn/images/0/4.jpg" >
+		<img src="http://eduppp.cn/images/0/5.jpg" >
+		<img src="http://eduppp.cn/images/0/2.jpg" >
+		<ul id="dis">
+			<li>中國標誌性建築：天安門</li>
+			<li>中國標誌性建築：東方明珠</li>
+			<li>中國標誌性建築：布達拉宮</li>
+			<li>中國標誌性建築：長城</li>
+			<li>中國標誌性建築：天壇</li>
+			</ul>
+	</div>
 </div>
-</body>
-</html>
