@@ -6,106 +6,140 @@ excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see wh
 image: "/images/pic02.jpg"
 ---
 <style type='text/css'>
-
-:root {
-	/* Base font size */
-	font-size: 10px;
+.slider_container {
+    margin: 30px auto;
+    width: 400px;
+    height: 280px;
+    position: relative;
+    border: 20px solid;    
+    border-color: #fff;
+    border-bottom-width: 100px;
+    background-color: #f5f5f5;
+    box-shadow: #666 0 0 5px;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
 }
 
-body {
-	min-height: 100vh;
-	background-color: #fafafa;
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6秒淡出*/
+    }
+}
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 
-.container {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
 }
 
-.heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
 }
 
-.heading span {
-	display: block;
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
 }
 
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+.slider_container span {    
+    color: #000;
+    background: #fff;
+    position: absolute;
+    left: 0%;
+    top: 280px;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
 }
 
-.gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+.slider_container:hover span {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
 }
-
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-	transform: scale(1.15);
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 </style>
 
-
-<div class="container">
-
-<h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
-
-<div class="gallery">
-<div class="gallery-item">
-		<img class="gallery-image" src="https://images.u
-		nsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
-		</div>
-
-<div class="gallery-item">
-		<img class="gallery-image" src="https://images.u
-		nsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
-		</div>
-
-<div class="gallery-item">
-		<img class="gallery-image" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-		</div>
-
-<div class="gallery-item">
-		<img class="gallery-image" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-		</div>
-
-<div class="gallery-item">
-			<img class="gallery-image" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-	</div>
-
-<div class="gallery-item">
-		<img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-
+<div class="slider_container">
+	<div>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/1-2.JPG" alt="pure css3 slider" />
+		
+		<span class="info">Image Description 1</span>
 </div>
-
+	<div>
+	<img src="https://tsaitsai2000.github.io/blog/images/Cebu/6.JPG" alt="pure css3 slider" />
+		<span class="info">Image Description 2</span>
+	</div>
+	<div>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/3.JPG" alt="pure css3 slider" />
+		<span class="info">Image Description 3</span>
+	</div>
+	<div>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/1.JPG" alt="pure css3 slider" />
+		<span class="info">Image Description 4</span>
+	</div>
+	<div>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/2.JPG" alt="pure css3 slider" />
+		<span class="info">Image Description 5</span>
+	</div>
 </div>
 ## How to Use This Theme
 Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
