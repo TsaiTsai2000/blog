@@ -5,248 +5,112 @@ date:   2017-10-31
 excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
 image: "/images/pic02.jpg"
 ---
-<style type='text/css'>
-$optionDefaultColours: 
-#ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
-body {
-   display:flex;
-   flex-direction:row;
-   justify-content:center;
-   align-items:center;
-   overflow:hidden;
-   height:100vh;
-   
-   font-family: 'Roboto', sans-serif;
-   .credit {
-      position: absolute;
-      bottom:20px;
-      left:20px;
-      
-      color:#000;
-   }
-   .options {
-      display:flex;
-      flex-direction:row;
-      align-items:stretch;
-      overflow:hidden;
-
-      min-width:600px;
-      max-width:900px;
-      width:calc(100% - 100px);
-      
-      height:400px;
-      
-      @for $i from 1 through 4 {
-         @media screen and (max-width:798px - $i*80) {
-            min-width:600px - $i*80;
-            .option:nth-child(#{6-$i}) {
-               display:none;
-            }
-         }
-      }
-      
-      .option {
-         position: relative;
-         overflow:hidden;
-
-         min-width:60px;
-         margin:10px;
-         //border:0px solid --defaultColor;
-
-         background:var(--optionBackground, var(--defaultBackground, #E6E9ED));
-         background-size:auto 120%;
-         background-position:center;
-
-         cursor: pointer;
-
-         transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-
-         @for $i from 1 through length($optionDefaultColours) {
-            &:nth-child(#{$i}) {
-               --defaultBackground:#{nth($optionDefaultColours, $i)};
-            }
-         }
-         &.active {
-            flex-grow:10000;
-            transform:scale(1);
-            
-            max-width:600px;
-            margin:0px;
-            border-radius:40px;
-            
-            background-size:auto 100%;
-            .shadow {
-               box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-            }
-            .label {
-               bottom:20px;
-               left:20px;
-               .info >div {
-                  left:0px;
-                  opacity:1;
-               }
-            }
-            /*&:active {
-               transform:scale(0.9);
-            }*/
-         }
-         &:not(.active) {
-            flex-grow:1;
-            
-            border-radius:30px;
-            .shadow {
-               bottom:-40px;
-               box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-            }
-            .label {
-               bottom:10px;
-               left:10px;
-               .info >div {
-                  left:20px;
-                  opacity:0;
-               }
-            }
-         }
-         .shadow {
-            position: absolute;
-            bottom:0px;
-            left:0px;
-            right:0px;
-            
-            height:120px;
-            
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-         }
-         .label {
-            display:flex;
-            position: absolute;
-            right:0px;
-
-            height:40px;
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-            .icon {
-               display:flex;
-               flex-direction:row;
-               justify-content:center;
-               align-items:center;
-               
-               min-width:40px;
-               max-width:40px;
-               height:40px;
-               border-radius:100%;
-
-               background-color:white;
-               color:var(--defaultBackground);
-            }
-            .info {
-               display:flex;
-               flex-direction:column;
-               justify-content:center;
-               
-               margin-left:10px;
-               
-               color:white;
-               
-               white-space: pre;
-               >div {
-                  position: relative;
-                  
-                  transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-               }
-               .main {
-                  font-weight:bold;
-                  font-size:1.2rem;
-               }
-               .sub {
-                  transition-delay:.1s;
-               }
-            }
-         }
-      }
-   }
-}
-</style>
-<div class="options">
-   <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-walking"></i>
-         </div>
-         <div class="info">
-            <div class="main">Blonkisoaz</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-snowflake"></i>
-         </div>
-         <div class="info">
-            <div class="main">Oretemauw</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-tree"></i>
-         </div>
-         <div class="info">
-            <div class="main">Iteresuselle</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-tint"></i>
-         </div>
-         <div class="info">
-            <div class="main">Idiefe</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
-   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-         <div class="icon">
-            <i class="fas fa-sun"></i>
-         </div>
-         <div class="info">
-            <div class="main">Inatethi</div>
-            <div class="sub">Omuke trughte a otufta</div>
-         </div>
-      </div>
-   </div>
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 飛天網事--純CSS程式碼實現圖片輪播 </title>
+  <meta charset="utf-8" />
+  <meta name="description" content="飛天網事，WEB前端開發，純css3程式碼圖片輪播，HTML5+CSS3精彩案例" />
+  <meta name="keywords" content="飛天網事，WEB前端開發，HTML5，CSS3，jQuery，" />
+	<meta name="author" content="R.tian @eduppp.cn 2015">
+	<link rel="shortcut icon"  href="http://eduppp.cn/images/logo4.gif" />
+	<link rel="apple-touch-icon" href="http://eduppp.cn/images/logo.gif" />
+  <style type="text/css">
+		#frame {/*----------圖片輪播相框容器----------*/
+			position: absolute; /*--絕對定位，方便子元素的定位*/
+			width: 300px;
+			height: 200px;
+			overflow: hidden;/*--相框作用，只顯示一個圖片---*/
+			border-radius:5px;
+		}
+		#dis {/*--絕對定位方便li圖片簡介的自動分佈定位---*/
+			position: absolute;
+			left: -50px;
+			top: -10px;
+			opacity: 0.5;
+		}
+		#dis li {
+			display: inline-block;
+			width: 200px;
+			height: 20px;
+			margin: 0 50px;
+			float: left;
+			text-align: center;
+			color: #fff;
+			border-radius: 10px;
+			background: #000;
+		}
+		#photos img {
+			float: left;
+			width:300px;
+			height:200px;
+		}
+		#photos {/*---設定總的圖片寬度--通過位移來達到輪播效果----*/
+			position: absolute;z-index:9px;
+			width: calc(300px * 5);/*---修改圖片數量的話需要修改下面的動畫引數*/
+		}
+		.play{
+			animation: ma 20s ease-out infinite alternate;/**/
+		}
+		@keyframes ma {/*---每圖片切換有兩個階段：位移切換和靜置。中間的效果可以任意定製----*/
+			0%,20% {		margin-left: 0px;		}
+			25%,40% {		margin-left: -300px;	}
+			45%,60% {		margin-left: -600px;	}
+			65%,80% {		margin-left: -900px;	}
+			85%,100% {		margin-left: -1200px;	}
+		}
+		.num{
+			position:absolute;z-index:10;
+			display:inline-block;
+			right:10px;top:165px;
+			border-radius:100%;
+			background:#f00;
+			width:25px;height:25px;
+			line-height:25px;
+			cursor:pointer;
+			color:#fff;
+			text-align:center;
+			opacity:0.8;
+		}
+		.num:hover{background:#00f;}
+		.num:hover,#photos:hover{animation-play-state:paused;}
+		.num:nth-child(2){margin-right:30px}
+		.num:nth-child(3){margin-right:60px}
+		.num:nth-child(4){margin-right:90px}
+		.num:nth-child(5){margin-right:120px}
+		#a1:hover ~ #photos{animation: ma1 .5s ease-out forwards;}
+		#a2:hover ~ #photos{animation: ma2 .5s ease-out forwards;}
+		#a3:hover ~ #photos{animation: ma3 .5s ease-out forwards;}
+		#a4:hover ~ #photos{animation: ma4 .5s ease-out forwards;}
+		#a5:hover ~ #photos {animation: ma5 .5s ease-out forwards;}
+		@keyframes ma1 {0%{margin-left:-1200px;}100%{margin-left:-0px;}	}
+		@keyframes ma2 {0%{margin-left:-1200px;}100%{margin-left:-300px;}	}
+		@keyframes ma3 {100%{margin-left:-600px;}	}
+		@keyframes ma4 {100%{margin-left:-900px;}	}
+		@keyframes ma5 {100%{margin-left:-1200px;}	}
+  </style>
+ </head>
+ <body>
+ <div id="frame" >
+		<a id="a1" class="num">1</a>
+		<a id="a2" class="num">2</a>
+		<a id="a3" class="num">3</a>
+		<a id="a4" class="num">4</a>
+		<a id="a5" class="num">5</a>
+		<div id="photos" class="play">
+			  <img src="http://eduppp.cn/images/0/1.jpg" >
+			  <img src="http://eduppp.cn/images/0/3.jpg" >
+			  <img src="http://eduppp.cn/images/0/4.jpg" >
+			  <img src="http://eduppp.cn/images/0/5.jpg" >
+			  <img src="http://eduppp.cn/images/0/2.jpg" >
+			  <ul id="dis">
+				<li>中國標誌性建築：天安門</li>
+				<li>中國標誌性建築：東方明珠</li>
+				<li>中國標誌性建築：布達拉宮</li>
+				<li>中國標誌性建築：長城</li>
+				<li>中國標誌性建築：天壇</li>
+			  </ul>
+		</div>
 </div>
-
-<a href="http://victorofvalencia-blog.tumblr.com" target="_blank" class="credit">Photos from Victor of Valencia on tumblr</a>
-## How to Use This Theme
-Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
-
-Download this repository [here](https://github.com/iwiedenm/jekyll-theme-massively) and save it to any folder you want.
-
-Open a terminal window or a command line and ```cd``` to that location.
-
-Then enter: ```bundle exec jekyll serve```. You can now access your new Jekyll site from [http://127.0.0.1:4000/](http://127.0.0.1:4000/). Have fun exploring your new site!
-
-## Features
-### Auto-Generating Sitemap
-The sitemap is auto generated! Just simply change the front matter of each site. It looks like so...
-```
-sitemap:
-    priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
-```
-### Formspring integration
-The contact form below each page on the footer actually collects information! Just change your email address in the ```_config.yml``` file!
+</body>
+</html>
