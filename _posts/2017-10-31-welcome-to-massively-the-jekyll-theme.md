@@ -5,17 +5,7 @@ date:   2017-10-31
 excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
 image: "/images/pic02.jpg"
 ---
-/*
-
-All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
-        
-The 'supports' rule will only run if your browser supports CSS grid.
-
-Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
-
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+<style type='text/css'>
 
 :root {
 	/* Base font size */
@@ -80,14 +70,7 @@ body {
 .gallery-image:hover {
 	transform: scale(1.15);
 }
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
+</style>
 
 @supports (display: grid) {
 	.gallery {
@@ -107,7 +90,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
 <h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
 
 <div class="gallery">
-
 <div class="gallery-item">
 		<img class="gallery-image" src="https://images.u
 		nsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
