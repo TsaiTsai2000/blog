@@ -6,6 +6,7 @@ excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see wh
 image: "/images/pic02.jpg"
 ---
 <style type='text/css'>
+
 .slider_container {
     margin: 30px auto;
     width: 400px;
@@ -122,23 +123,23 @@ image: "/images/pic02.jpg"
 	<div>
 		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/1-2.JPG" alt="pure css3 slider" />
 		
-		<span class="info">Image Description 1</span>
+<span class="info">Image Description 1</span>
 </div>
 	<div>
-	<img src="https://tsaitsai2000.github.io/blog/images/Cebu/6.JPG" alt="pure css3 slider" />
-		<span class="info">Image Description 2</span>
+	<img src="https://tsaitsai2000.github.io/blog/images/Cebu/6.JPG" alt="pure css3 slider" / position: fixed; z-index: -1>
+	<span class="info">Image Description 2</span>
 	</div>
 	<div>
-		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/3.JPG" alt="pure css3 slider" />
-		<span class="info">Image Description 3</span>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/3.JPG" alt="pure css3 slider" / position: fixed; z-index: -1>
+	<span class="info">Image Description 3</span>
 	</div>
 	<div>
-		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/1.JPG" alt="pure css3 slider" />
-		<span class="info">Image Description 4</span>
+	<img src="https://tsaitsai2000.github.io/blog/images/Cebu/1.JPG" alt="pure css3 slider" / position: fixed; z-index: -1>
+	<span class="info">Image Description 4</span>
 	</div>
 	<div>
-		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/2.JPG" alt="pure css3 slider" />
-		<span class="info">Image Description 5</span>
+		<img src="https://tsaitsai2000.github.io/blog/images/Cebu/2.JPG" alt="pure css3 slider" / position: fixed; z-index: -1>
+	<span class="info">Image Description 5</span>
 	</div>
 </div>
 ## How to Use This Theme
