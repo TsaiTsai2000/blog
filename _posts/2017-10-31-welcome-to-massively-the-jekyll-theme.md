@@ -5,15 +5,15 @@ date:   2017-10-31
 excerpt: "Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do"
 image: "/images/pic02.jpg"
 ---
-  <title> 飛天網事--純CSS程式碼實現圖片輪播 </title>
-  <meta charset="utf-8" />
-  <meta name="description" content="飛天網事，WEB前端開發，純css3程式碼圖片輪播，HTML5+CSS3精彩案例" />
-  <meta name="keywords" content="飛天網事，WEB前端開發，HTML5，CSS3，jQuery，" />
-	<meta name="author" content="R.tian @eduppp.cn 2015">
-	<link rel="shortcut icon"  href="http://eduppp.cn/images/logo4.gif" />
-	<link rel="apple-touch-icon" href="http://eduppp.cn/images/logo.gif" />
-  <style type="text/css">
-		#frame {/*----------圖片輪播相框容器----------*/
+<title> 飛天網事--純CSS程式碼實現圖片輪播 </title>
+<meta charset="utf-8" />
+<meta name="description" content="飛天網事，WEB前端開發，純css3程式碼圖片輪播，HTML5+CSS3精彩案例" />
+<meta name="keywords" content="飛天網事，WEB前端開發，HTML5，CSS3，jQuery，" />
+<meta name="author" content="R.tian @eduppp.cn 2015">
+<link rel="shortcut icon"  href="http://eduppp.cn/images/logo4.gif" />
+<link rel="apple-touch-icon" href="http://eduppp.cn/images/logo.gif" />
+<style type="text/css">
+	#frame {/*----------圖片輪播相框容器----------*/
 			position: absolute; /*--絕對定位，方便子元素的定位*/
 			width: 300px;
 			height: 200px;
@@ -44,7 +44,7 @@ image: "/images/pic02.jpg"
 		}
 		#photos {/*---設定總的圖片寬度--通過位移來達到輪播效果----*/
 			position: absolute;z-index:9px;
-			width: calc(300px * 5);/*---修改圖片數量的話需要修改下面的動畫引數*/
+			width: calc(500px * 5);/*---修改圖片數量的話需要修改下面的動畫引數*/
 		}
 		.play{
 			animation: ma 20s ease-out infinite alternate;/**/
