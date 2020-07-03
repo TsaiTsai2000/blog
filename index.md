@@ -7,10 +7,13 @@ sitemap:
     lastmod: 2020-02-18
     changefreq: weekly
 ---
-<!DOCTYPE HTML>
 <html>
+	<head>
+    {% include head.html %}
 
-<body class="is-loading">
+
+</head>
+	<body class="is-loading">
 
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
