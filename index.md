@@ -9,11 +9,7 @@ sitemap:
 ---
 <!DOCTYPE HTML>
 <html>
-	<head>
-    {% include head.html %}
 
-
-</head>
 	<body class="is-loading">
 
 <!-- Wrapper -->
