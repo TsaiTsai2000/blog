@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: Home
 title: Home｜TSAI's Blog
 description: my blog
 sitemap:
