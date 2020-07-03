@@ -10,7 +10,7 @@ sitemap:
 <!DOCTYPE HTML>
 <html>
 
-	<body class="is-loading">
+<body class="is-loading">
 
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
