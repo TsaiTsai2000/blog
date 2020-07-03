@@ -8,11 +8,14 @@ sitemap:
     changefreq: weekly
 ---
 <html>
+	<head>
+	{% include head.html %}
 
-<body class="is-loading">
 
-<!-- Wrapper -->
-<div id="wrapper" class="fade-in">
+</head>
+	<body class="is-loading">
+
+
 
 <!-- Intro -->
 <div id="intro">
@@ -70,7 +73,7 @@ sitemap:
                   {% endif %}
                 {% endfor %}
 
-</section>
+							</section>
 <!-- Footer -->
 <footer>
                 <ul class="actions">
