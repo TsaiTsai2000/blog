@@ -8,12 +8,8 @@ sitemap:
     changefreq: weekly
 ---
 <html>
-	<head>
-{% include head.html %}
 
-
-</head>
-	<body class="is-loading">
+<body class="is-loading">
 
 <!-- Wrapper -->
 <div id="wrapper" class="fade-in">
