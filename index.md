@@ -13,31 +13,31 @@ sitemap:
     {% include head.html %}
 
 
-	</head>
+</head>
 	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-            <h1>{{site.title}}</h1>
-						<h2>{{site.bio}}</h2>
-						<p>分享生活、旅遊記事，把握現在的日子留做以後懷念。</p>
-						<ul class="actions">
+<!-- Intro -->
+<div id="intro">
+    <h1>{{site.title}}</h1>
+		<h2>{{site.bio}}</h2>
+			<p>分享生活、旅遊記事，把握現在的日子留做以後懷念。</p>
+			<ul class="actions">
 							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
 
-				<!-- Header -->
-					<header id="header">
+<!-- Header -->
+<header id="header">
 						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
+<!-- Nav -->
+<nav id="nav">
 
-            {% include nav.html %}
+	 {% include nav.html %}
 
 					</nav>
 
