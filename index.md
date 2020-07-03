@@ -1,6 +1,6 @@
 ---
 layout: null
-title: TsaiTsai的部落格
+title: Home｜TSAI's Blog
 description:my blog
 sitemap:
     priority: 1.0

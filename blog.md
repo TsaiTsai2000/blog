@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Tsai Tsai's blog
+title: Blog｜TSAI's Blog
 description: 
 sitemap:
     priority: 1.0

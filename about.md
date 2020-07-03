@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About - TSAI
+title: About ｜TSAI's Blog
 description: 
 sitemap:
     priority: 0.7
