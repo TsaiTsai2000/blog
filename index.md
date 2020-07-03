@@ -1,12 +1,13 @@
 ---
 layout: Home
 title: Home｜TSAI's Blog
-description: my blog
+description:my blog
 sitemap:
     priority: 1.0
     lastmod: 2020-02-18
     changefreq: weekly
 ---
+<!DOCTYPE HTML>
 <html>
 	<head>
     {% include head.html %}
