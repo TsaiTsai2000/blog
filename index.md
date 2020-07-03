@@ -9,7 +9,7 @@ sitemap:
 ---
 <html>
 	<head>
-    {% include head.html %}
+{% include head.html %}
 
 
 </head>
@@ -38,17 +38,17 @@ sitemap:
 
 	 {% include nav.html %}
 
-					</nav>
+</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Travel</a></h2>
+<!-- Main -->
+<div id="main">
+<!-- Featured Post -->
+	<article class="post featured">
+	<header class="major">
+		<h2><a href="#">Travel</a></h2>
 									<p></p>
-								</header>
-								<a href="#" class="image main"><img src="{{ "/images/travel.jpg" | absolute_url }}" alt="" /></a>
+	</header>
+	<a href="#" class="image main"><img src="{{ "/images/travel.jpg" | absolute_url }}" alt="" /></a>
                 <p><font face="微軟正黑體">我會在主頁這裡分享出去旅遊的心得，
 					裡面包含一些去之前所預排的行程表、一趟旅途的花費，
 					這些都是花了很多時間去安排的~ 想去的人如果可以參考一下我會很開心❤️
@@ -74,25 +74,22 @@ sitemap:
                   {% endif %}
                 {% endfor %}
 
-							</section>
-
-						<!-- Footer -->
-							<footer>
+</section>
+<!-- Footer -->
+<footer>
                 <ul class="actions">
                   <li><a href="{{ "/blog/" | absolute_url }}" class="button">My Blog</a></li>
                 </ul>
 							</footer>
+</div>
 
-					</div>
-
-				<!-- Footer -->
+<!-- Footer -->
         {% include foot.html %}
 
-			</div>
-
-		<!-- Scripts -->
+</div>
+<!-- Scripts -->
 		{% include scripts-main.html %}
     {% include tracking.html %}
 
-	</body>
+</body>
 </html>
