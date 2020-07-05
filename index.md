@@ -13,7 +13,6 @@ sitemap:
 
 
 </head>
-	<body class="is-loading">
 
 
 
