@@ -13,9 +13,7 @@ sitemap:
 
 
 </head>
-
-
-
+	<body class="is-loading">
 <!-- Intro -->
 <div id="intro">
     <h1>{{site.title}}</h1>
@@ -76,7 +74,7 @@ sitemap:
 <!-- Footer -->
 <footer>
                 <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">My Blog</a></li>
+                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">My Blog(click to see more)</a></li>
                 </ul>
 							</footer>
 </div>
